@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lightning Integration Tests</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
+    <style>
+      body {
+	  background-color: #f5f8fa;
+      }
+      h1, h2, h3, h4 {
+	  padding-bottom: 9px;
+	  margin: 40px 0 20px;
+	  border-bottom: 1px solid #eee;
+      }
+
+      h1 > a {
+	  color: inherit;
+      }
+      .container {
+	  width: 800px;
+	  margin-top: 1em;
+	  background-color: #FFFFFF;
+	  border-radius: 0.25rem;
+	  padding: 0.75rem 1.25rem;
+	  border: 1px solid rgba(0, 0, 0, 0.125);
+      }
+
+      thead {
+	  border: none;
+      }
+      td, th {
+	  font-size: 0.95em;
+      }
+      td > span.badge {
+	  padding: 0.5em;
+      }
+      td.result {
+	  text-align: center;
+      }
+    </style>
+    <script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js">
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="page-header">
+Lightning Integration Tests <a href="https://github.com/cdecker/lightning-integration"><i class="fa fa-github" aria-hidden="true"></i></a>
+
+</h1>
+      
+
+<p>
+  This page shows the latest integration test results for the three Lightning implementations.
+  We test the latest versions of <a href="https://github.com/ACINQ/eclair">eclair</a>, <a href="https://github.com/ElementsProject/lightning">c-lightning</a>, and <a href="https://github.com/lightningnetwork/lnd">lnd</a> against each other in a number of scenarios and see if they can cooperate.
+</p>
+<p>
+  Below is a table of the latest test runs, with their respective scores.
+  Click on the ID link to see the detailed test results for that run.
+</p>
+
+<table class="table table-condensed table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Date/Time</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td><a href="8f69ab048dc589e27ec64f658f2ead281d7a0a4665363a1b2ca567de6ce4524a.html">8f69ab0</a></td>
+      <td>2017-08-28 23:30:38</td>
+      <td>
+	<span class="badge badge-warning">
+	  29 / 39
+	</span>
+      </td>
+    </tr>
+    
+    <tr>
+      <td><a href="97839c27a65bd75d0ae86e2cc98f6e8d4b27ba72e6338bcac8dd4c1307d0f9e0.html">97839c2</a></td>
+      <td>2017-08-23 22:58:51</td>
+      <td>
+	<span class="badge badge-warning">
+	  21 / 39
+	</span>
+      </td>
+    </tr>
+    
+    <tr>
+      <td><a href="baf39e469787390145836e360e94943772b46f58bff9642e91442fad3b2361f3.html">baf39e4</a></td>
+      <td>2017-08-20 13:58:15</td>
+      <td>
+	<span class="badge badge-warning">
+	  21 / 30
+	</span>
+      </td>
+    </tr>
+    
+    <tr>
+      <td><a href="07f1821c5629d6eaf2df351ce27fc9c30cdd4fb0d3e8fb6fe76ffe1194bc28b7.html">07f1821</a></td>
+      <td>2017-08-16 22:42:57</td>
+      <td>
+	<span class="badge badge-warning">
+	  18 / 30
+	</span>
+      </td>
+    </tr>
+    
+    <tr>
+      <td><a href="55e9c14d4944c5c0277885eaa04c2ecb6aab85d6a70e94885bbbec2fec7c9851.html">55e9c14</a></td>
+      <td>2017-08-16 15:06:27</td>
+      <td>
+	<span class="badge badge-warning">
+	  17 / 21
+	</span>
+      </td>
+    </tr>
+    
+    <tr>
+      <td><a href="ece062dbbb45b913af4c287b4c3a77d46bd722f10c7771eb74516249e113c360.html">ece062d</a></td>
+      <td>2017-08-11 12:42:42</td>
+      <td>
+	<span class="badge badge-warning">
+	  16 / 21
+	</span>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+<p>
+  Notice that the results are still not stable and compatibility may be
+  broken from time to time as implementations move closer to being spec
+  compliant, or as we add new scenarios.
+</p>
+
+    </div>
+  </body>
+</html>
